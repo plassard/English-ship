@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_stat"
+    tools:context="english.pj.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewM2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/tvMainLogo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageViewM2"
+        android:layout_marginTop="25dp"
+        android:text="English"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="70dp" />
+    <TextView
+        android:id="@+id/tvMainLogo2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvMainLogo"
+        android:layout_marginTop="5dp"
+        android:text="ship"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:background="@drawable/btn_red_selector"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:layout_alignParentBottom="true"
+        android:text="Игра"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:onClick="onNewGame" />
+
+
+
+    <Button
+        android:id="@+id/btnTrain1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onStatButton"
+        android:text="Статистика"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/settings"
+        android:onClick="onSettingsBtn"
+        android:textSize="18dp" />
+
+
+
+
+</RelativeLayout>

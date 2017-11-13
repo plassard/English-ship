@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:background="@drawable/fon_grad"
+tools:context="english.pj.GamesListActivity">
+<Button
+    android:id="@+id/btnSettings"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_margin="25dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/settings"
+    android:onClick="onSettingsBtn"
+    android:textSize="18dp" />
+
+<Button
+    android:id="@+id/btnBack"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="25dp"
+    android:background="@drawable/back_arrow"
+    android:onClick="onButtonBack"
+    android:textSize="18dp" />
+<TextView
+    android:text="Список игр"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/textViewGLHeader"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textSize="22dp"
+    android:textColor="@color/white"
+    android:layout_height="70dp" />
+
+<ScrollView
+    android:id="@+id/scrollChat"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textViewGLHeader"
+    android:layout_above="@+id/LinearLayoutSix8"
+    >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutSixScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGLHeader"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="vertical">
+
+
+        <Button
+            android:id="@+id/btnSix1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="30dp"
+            android:text="Твой ход:"
+
+            android:layout_marginBottom="15dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/LinLayoutGamesYourTurn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/textViewGLHeader"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnZaversh"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="30dp"
+
+            android:text="Завершенные игры:"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/LinLayoutCompletedGames"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="vertical">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSix3"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="15dp"
+            android:text="Ждем хода противника:"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/LinLayoutWaitingPlayers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="vertical">
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+<RelativeLayout
+    android:id="@+id/LinearLayoutSix8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    >
+
+    <Button
+        android:id="@+id/btwFindNewPlayer"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_red_selector"
+        android:onClick="onFindNewPlayer"
+        android:text="Случайный игрок"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnBot"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btwFindNewPlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onBot"
+        android:text="Игра с ботом"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnPlayWithFriend"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btnBot"
+        android:layout_toLeftOf="@+id/btnBot"
+
+        android:background="@drawable/search_icon"
+        android:onClick="onFind"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btnBot"
+        android:layout_toRightOf="@+id/btnBot"
+        android:background="@drawable/stat_icon"
+        android:onClick="onStatistics"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/transparentpartially"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/pbHeaderProgress"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>
+

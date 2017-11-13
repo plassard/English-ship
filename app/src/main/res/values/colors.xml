@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="red">#FD686D</color>
+    <color name="red_pressed">#ef5f6c</color>
+    <color name="fiolet">#a36dc7</color>
+    <color name="incorrect">#ff6876</color>
+    <color name="correct">#0eebaa</color>
+    <color name="textgray">#6c6c6c</color>
+    <color name="green">#16C6CC</color>
+    <color name="orange">#ffabab</color>
+    <color name="red_on_button">#ff6876</color>
+    <color name="yellow">#fac917</color>
+    <color name="black">#000000</color>
+    <color name="grey">#ababab</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparentpartially">#20FFFFFF</color>
+    <color name="redlight">#ff9191</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingStart="40dp"
+android:paddingEnd="40dp"
+android:background="@drawable/fon_login"
+tools:context="english.pj.ShowProfileActivity">
+
+
+
+
+<ImageView
+    android:layout_width="match_parent"
+
+    android:scaleType="centerInside"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="15dp"
+    android:id="@+id/imageViewShowPlayerAvatar"
+    android:layout_height="240dp"
+    />
+
+<TextView
+    android:id="@+id/textViewNick"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_below="@+id/imageViewShowPlayerAvatar"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:text="TextView"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/buttonChat"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+
+    android:layout_alignBaseline="@+id/textViewNick"
+    android:layout_toEndOf="@+id/textViewNick"
+    android:layout_marginLeft="15dp"
+    android:layout_marginStart="15dp"
+    android:background="@drawable/chat"
+    android:onClick="onChatButton"
+    android:textColor="@color/black"
+    android:textSize="13sp" />
+
+<TextView
+    android:text="Украина, Киев"
+    android:layout_below="@id/textViewNick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:gravity="center"
+    android:id="@+id/textViewLocation"
+    android:textColor="@color/redlight" />
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textViewLocation"
+    android:layout_marginTop="5dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:id="@+id/LinLay2inShowUser"
+    >
+
+
+    <Button
+        android:id="@+id/buttonAddDeleteFriend"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_red_selector"
+        android:onClick="onAddDeleteFriend"
+        android:text="В друзья"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnInviteFriend"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_red_selector"
+        android:onClick="onPlayWithFriend"
+        android:text="Вызвать на бой"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</LinearLayout>
+
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:columnCount="2"
+    android:layout_marginTop="10dp"
+    android:rowCount="6"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/grid1"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/LinLay3inShowUser">
+
+    <TextView
+        android:id="@+id/textViewSU17"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:gravity="center_vertical"
+        android:text="Победы:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+    <TextView
+        android:id="@+id/textViewSU18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_row="2"
+        android:layout_rowSpan="2"
+        android:gravity="center_vertical"
+        android:text="Ничьи:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/textViewSU19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_row="4"
+        android:layout_rowSpan="2"
+        android:gravity="center_vertical"
+        android:text="Поражения:  "
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+    <ProgressBar
+        android:layout_gravity="fill"
+        android:layout_height="26dp"
+        android:minHeight="8dp"
+        android:maxHeight="8dp"
+        android:alpha="0.25"
+        android:id="@+id/progressBarWinsShowUser"
+        android:max="100"
+        android:layout_column="1"
+        android:progress="50"
+        android:layout_row="0"
+        android:progressDrawable="@drawable/myprogress_line"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+    <TextView
+        android:id="@+id/textViewWinsShowUser"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:paddingStart="5dp"
+
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <ProgressBar
+        android:layout_gravity="fill"
+        android:layout_height="26dp"
+        android:alpha="0.25"
+        android:minHeight="8dp"
+        android:maxHeight="8dp"
+        android:id="@+id/progressBarDrawsShowUser"
+        android:progressDrawable="@drawable/myprogress_line"
+        android:max="100"
+        android:layout_column="1"
+        android:progress="20"
+        android:layout_row="2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView
+        android:id="@+id/textViewDrawsShowUser"
+        android:layout_width="wrap_content"
+
+        android:paddingStart="5dp"
+        android:layout_height="26dp"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLossesShowUser"
+        android:layout_gravity="fill"
+        android:layout_width="fill_parent"
+        android:alpha="0.25"
+        android:layout_height="26dp"
+        android:minHeight="8dp"
+        android:maxHeight="8dp"
+        android:max="100"
+        android:layout_column="1"
+        android:progress="60"
+        android:progressDrawable="@drawable/myprogress_line"
+        android:layout_row="4"
+        android:indeterminateOnly="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <TextView
+        android:id="@+id/textViewLossesShowUser"
+        android:paddingStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+</GridLayout>
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/LinLay3inShowUser"
+    android:layout_below="@+id/LinLay2inShowUser"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="25dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/star" />
+
+    <TextView
+        android:text="  Рейтинг: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/textViewNickRank"
+        android:textStyle="normal|bold"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+</RelativeLayout>

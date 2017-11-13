@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fon_login"
+    tools:context="english.pj.RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/textViewRegEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="English"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textViewRegFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="ship"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+
+    <EditText
+        android:id="@+id/EditLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/fiolet"
+        android:textColor="@color/fiolet"
+        android:hint="Логин*"
+        android:maxLines="1"  />
+
+
+    <EditText
+        android:id="@+id/EditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/fiolet"
+        android:textColor="@color/fiolet"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:maxLines="1"
+        android:hint="Пароль*" />
+
+    <EditText
+        android:id="@+id/editBDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Дата рождения (необязательно)"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:maxLines="1"
+        android:onClick="setDate"
+        android:textColor="@color/fiolet"
+        android:textColorHint="@color/fiolet" />
+
+
+    <EditText
+        android:id="@+id/EditTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Город (необязательно)"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:maxLines="1"
+        android:textColor="@color/fiolet"
+        android:textColorHint="@color/fiolet" />
+
+    <Spinner
+        android:id="@+id/spinnerCountryRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:entries="@array/countries"
+        android:popupBackground="#a36dc7"
+        android:layout_marginStart="3dp"
+        android:paddingStart="8dp"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/fiolet"
+        android:textColorHint="@color/fiolet" />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_red_selector"
+        android:onClick="onRegisterButton"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

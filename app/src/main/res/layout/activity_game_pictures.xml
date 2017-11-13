@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/RelativePicturesGame"
+tools:context="english.pj.GamePicturesActivity"
+android:background="@drawable/fon_pictures">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_gravity="fill"
+        android:layout_height="26dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:minHeight="8dp"
+        android:maxHeight="8dp"
+        android:alpha="0.25"
+        android:id="@+id/progressBarTime"
+        android:max="300"
+        android:progress="300"
+        android:progressDrawable="@drawable/myprogress_line"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <TextView
+        android:id="@+id/textViewAboveGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Раунд категория"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="160"
+        android:onClick="onNextPict"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button1WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton1"
+        android:text="признание"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton2"
+        android:text="усердие"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button3WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton3"
+        android:text="пристрастие"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button4WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton4"
+        android:text="намерение"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="25dp"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:facebook="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="16dp"
+tools:context="english.pj.LoginActivity"
+android:background="@drawable/fon_login">
+
+    <TextView
+        android:id="@+id/textViewLoginEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="English"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/textViewLoginFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="ship"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView1Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Войти через:"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonVKLogin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/vk"
+            android:onClick="onVKLoginButtonClick" />
+
+        <Button
+            android:id="@+id/buttonFBCustom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/facebook_logo"
+            android:onClick="onFBEnterClick" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="или если вы уже зарегистрированы:"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="center"
+    android:id="@+id/EditLogin"
+    android:hint="Логин"
+    android:textColorHint="@color/white"
+    android:textColor="@color/white"
+    android:background="@drawable/edittext_underline"
+    android:maxLines="1"/>
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center"
+    android:id="@+id/EditPassword"
+    android:background="@drawable/edittext_underline"
+    android:textColor="@color/white"
+    android:hint="Пароль"
+    android:textColorHint="@color/white"
+    android:textColorHighlight="@color/white"
+    android:inputType="textPassword"
+    android:maxLines="1" />
+
+<Button
+    android:id="@+id/buttonLoginGeneral"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/btn_red_selector"
+    android:onClick="onClickLogin"
+    android:text="Войти"
+    android:textColor="@color/white" />
+
+<Button
+    android:id="@+id/buttonRegister"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/btn_transp_selector"
+    android:onClick="onClickRegister"
+    android:text="Зарегистрироваться"
+    android:textColor="@color/white" />
+
+
+
+
+</LinearLayout>
+

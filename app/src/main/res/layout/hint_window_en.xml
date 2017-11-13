@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+    android:background="@drawable/dialog_rounded_shape"
+android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+tools:context="english.pj.GameWordsEnActivity">
+
+        <TextView
+            android:id="@+id/textViewHintHeader"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/alert_header"
+            android:gravity="center"
+            android:text="Пример употребления"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textViewHintWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="П - ggg"
+            android:textAlignment="center"
+            android:textColor="@color/textgray"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Поздравляем, вы победили Данила"
+            android:textAlignment="center"
+            android:textColor="@color/textgray"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonHintBuyPr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_red_selector"
+        android:padding="10dp"
+        android:text="Открыть полностью"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_green_selector"
+        android:text="Понятно"
+        android:textColor="@color/white" />
+
+</LinearLayout>

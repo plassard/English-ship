@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/relativeWordsRU"
+tools:context="english.pj.GameWordsRuActivity"
+android:background="@drawable/fon_quest3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewAboveGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Выбери правильный перевод:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <GridLayout
+    android:id="@+id/gridLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="45"
+    android:layout_gravity="center"
+    android:columnCount="1"
+    android:rowCount="1" >
+
+    <Button
+        android:id="@+id/btnQuestion"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_row="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/buttonshape"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:onClick="onButtonNextWordsRU" />
+    <english.pj.ProgressIndicator
+        android:id="@+id/determinate_progress_indicator1"
+        android:layout_width="280dp"
+        android:visibility="invisible"
+        android:layout_height="280dp"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_row="0"
+        android:clickable="false"
+        android:orientation="horizontal"
+        />
+
+</GridLayout>
+
+    <Button
+        android:id="@+id/button1WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton1"
+        android:text="признание"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+    android:id="@+id/button2WordsRu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+    android:background="@drawable/btn_transp_selector"
+    android:onClick="onButton2"
+    android:text="усердие"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button3WordsRu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_transp_selector"
+        android:onClick="onButton3"
+        android:text="пристрастие"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+    android:id="@+id/button4WordsRu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:layout_margin="8dp"
+    android:background="@drawable/btn_transp_selector"
+    android:onClick="onButton4"
+    android:text="намерение"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:visibility="invisible" />
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_rounded_shape"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Приглашение на бой"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/textView14"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/alert_header"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvWhoInvites"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/textgray"
+        android:text="Василий приглашает Вас сразиться. Вы принимаете вызов?"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="60dp">
+
+        <Button
+            android:text="  Принять  "
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonAcceptInvitation"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_red_selector" />
+
+        <Button
+            android:text="  Отказаться  "
+            android:layout_marginStart="30dp"
+            android:textColor="@color/textgray"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonDeclineInvitation"
+            android:background="@drawable/btn_white_selector" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">English ship</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1551179296384155/8778076020</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."    </string>
+
+    <integer name="com_vk_sdk_AppId">6132517</integer>
+
+    <string name="facebook_app_id">465793357125758</string>
+    <string name="fb_login_protocol_scheme">fb465793357125758</string>
+
+    <string-array name="countries">
+        <item>Украина</item>
+        <item>Россия</item>
+        <item>Белару́сь</item>
+        <item>Австралия</item>
+        <item>Австрия</item>
+        <item>Азейрбаджан</item>
+        <item>Белару́сь</item>
+        <item>Австралия</item>
+        <item>Австрия</item>
+        <item>Азейрбаджан</item>
+        <item>Аргентина</item>
+        <item>Армения</item>
+        <item>Бельгия</item>
+        <item>Болгария</item>
+        <item>Боливия</item>
+        <item>Бразилия</item>
+        <item>Великобритания</item>
+        <item>Венгрия</item>
+        <item>Германия</item>
+        <item>Греция</item>
+        <item>Грузия</item>
+        <item>Дания</item>
+        <item>Израиль</item>
+        <item>Индия</item>
+        <item>Ирландия</item>
+        <item>Исландия</item>
+        <item>Испания</item>
+        <item>Италия</item>
+        <item>Казахстан</item>
+        <item>Канада</item>
+        <item>Кипр</item>
+        <item>Киргизия</item>
+        <item>Китай</item>
+        <item>Корея</item>
+        <item>Латвия</item>
+        <item>Литва</item>
+        <item>Лихтенштейн</item>
+        <item>Люксембург</item>
+        <item>Македония</item>
+        <item>Мексика</item>
+        <item>Молдавия</item>
+        <item>Нидерланды</item>
+        <item>Новая Зеландия</item>
+        <item>Норвегия</item>
+        <item>Польша</item>
+        <item>Португалия</item>
+        <item>Румыния</item>
+        <item>Сербия</item>
+        <item>Словакия</item>
+        <item>Словения</item>
+        <item>США</item>
+        <item>Таджикистан</item>
+        <item>Туркмения</item>
+        <item>Турция</item>
+        <item>Узбекистан</item>
+        <item>Уругвай</item>
+        <item>Финляндия</item>
+        <item>Франция</item>
+        <item>Хорватия</item>
+        <item>Черногория</item>
+        <item>Чехия</item>
+        <item>Швейцария</item>
+        <item>Швеция</item>
+        <item>Эстония</item>
+        <item>Япония</item>
+        <item>Другая страна</item>
+    </string-array>
+
+</resources>

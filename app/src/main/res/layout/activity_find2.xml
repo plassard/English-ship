@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+
+android:background="@drawable/fon_grad"
+
+tools:context="english.pj.Find2Activity">
+<TextView
+    android:id="@+id/textViewFindHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="center|top"
+    android:gravity="center"
+    android:text="Поиск соперника"
+    android:textColor="@color/white"
+    android:textSize="22dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/LinLayFind1"
+    android:layout_height="50dp"
+    android:layout_marginTop="45dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Друзья"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:onClick="onFriendsGo"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_transp_selector"/>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="Найти по имени"
+
+        android:background="@drawable/btn_red_selector"/>
+</LinearLayout>
+
+
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+android:layout_marginStart="10dp"
+    android:layout_marginEnd="100dp"
+    android:hint="Введите"
+    android:textColorHint="@color/white"
+    android:textColor="@color/black"
+    android:layout_below="@+id/LinLayFind1"
+    android:layout_marginTop="15dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/editTextFindFriends" />
+
+<Button
+    android:text="Найти"
+    android:layout_height="40dp"
+    android:layout_marginEnd="10dp"
+    android:id="@+id/buttonSearchFriends"
+    android:background="@drawable/btn_red_selector"
+    android:onClick="onSearchFriend"
+    android:layout_below="@+id/LinLayFind1"
+    android:layout_marginTop="15dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/white"
+    android:layout_width="90dp" />
+
+<ListView
+    android:id="@+id/listViewSearchP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/editTextFindFriends"
+
+    android:layout_marginStart="10dp"
+    android:dividerHeight="3.0sp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/gradient_row_line"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ffb7b9"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+         />
+
+    <TextView
+        android:id="@+id/textName"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Name" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textRankScore"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="normal|bold"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
+
+</LinearLayout>

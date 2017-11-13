@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_rounded_shape"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:text="Выход из аккаунта"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/textView14"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/alert_header"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvWh"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Вы действительно хотите выйти из аккаунта и зайти заново?"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="60dp">
+
+            <Button
+                android:text="  ДА  "
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:id="@+id/buttonExitYes"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_red_selector" />
+
+            <Button
+                android:text="  НЕТ  "
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:id="@+id/buttonExitNo"
+                android:background="@drawable/btn_red_selector" />
+        </LinearLayout>
+
+
+</LinearLayout>

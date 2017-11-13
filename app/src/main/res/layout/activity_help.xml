@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_help"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/fon_stat"
+tools:context="english.pj.HelpActivity">
+<TextView
+    android:text="Справка"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/textViewHelpHeader"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textSize="22dp"
+    android:textColor="@color/white"
+    android:background="#858ec7"
+    android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="За победу дается 3 очка, за ничью дается 1 очко, за поражение ничего не дается. В ходе поединка с соперником победителем становится тот, кто набрал больше баллов (баллы после игры сгорают, в рейтинг заносятся только вышеупомянутые очки)"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="По ходу игры даются игровые баллы за правильные ответы, с такими максимальными баллами:"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="В категории верно-неверно за правильный ответ дается 1 балл"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="В категории по буквам за разгадывание слова без ошибок дается 5 баллов"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="В категории сопоставить за каждую сопоставленную пару дается 2 балла"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="За каждую ошибку в любой категории отнимается 1 балл (после игры балы сгорают)"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView20"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Если вы 2 раза ответили безошибочно на одно слово, оно заносится Вам в словарный запас и больше не повторяется, когда вы выбираете вопросы"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="english.pj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".ApplicationVK"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseCategoryOfQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameWordsEnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PreGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameYesNoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamePicturesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamePicturesRUActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameLettersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameWordsRuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameMatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowVsEnemyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RankTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Find2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacebookLoginActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".ServiceBackround" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+        <activity android:name=".BuyActivity"></activity>
+    </application>
+
+</manifest>

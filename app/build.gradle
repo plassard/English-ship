@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'englishship'
+            keyPassword 'Idkfaiddqd85'
+            storeFile file('D:/java_keys/pashutin_key_store2.jks')
+            storePassword 'Idkfaiddqd85'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    //For http
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "english.pj"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 9
+        versionName "1.0"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('C:/Users/ASUS/AndroidStudioProjects/English Fight Club/libs/httpclient-4.5.3.jar')
+    compile files('C:/Users/ASUS/AndroidStudioProjects/English Fight Club/libs/httpcore-4.4.6.jar')
+    compile 'com.anjlab.android.iab.v3:library:1.0.44'
+    compile 'com.vk:androidsdk:1.6.5'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.firebase:firebase-crash:10.0.1'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    testCompile 'junit:junit:4.12'
+}
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

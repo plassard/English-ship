@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_chat"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/fon_login"
+tools:context="english.pj.ChatActivity">
+<Button
+    android:id="@+id/btnBack"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="25dp"
+    android:background="@drawable/back_arrow"
+    android:onClick="onButtonBackChat" />
+<ImageView
+    android:id="@+id/imageViewChatAva"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="10dp"
+    app:srcCompat="@drawable/ava" />
+<TextView
+    android:id="@+id/textViewChatPartner"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="Чат с Ваней"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="20dp" />
+
+<ScrollView
+    android:id="@+id/scrollChat"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="45dp"
+    >
+    <LinearLayout
+        android:id="@+id/ChatLinLayout"
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+</ScrollView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:id="@+id/RelLayChat"
+    android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text=""
+        android:id="@+id/editTextChat"
+        android:paddingStart="15dp"
+        android:layout_toStartOf="@+id/buttonSendChatMessage"
+        android:background="@color/white"
+        android:layout_toLeftOf="@+id/buttonSendChatMessage" />
+
+    <Button
+        android:id="@+id/buttonSendChatMessage"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/send"
+        android:onClick="onChatMesSend" />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

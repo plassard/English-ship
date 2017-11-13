@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_about"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/fon_stat"
+tools:context="english.pj.AboutActivity">
+
+    <TextView
+        android:text="Об игре"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textViewAboutHeader"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:background="#858ec7"
+        android:layout_height="45dp" />
+
+<TextView
+    android:text="Игра разработана компанией PaDom по всем вопросам и предложением просьба обращаться:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/textViewAboutHeader"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:id="@+id/textView24"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+    <TextView
+        android:text="eng.fight.club@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/textView25"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Если данная игра для вас стала легкой, попробуйте аналогичную, но более сложную игру English Fight Club:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/textView26"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/imageViewLink"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:src="@drawable/efc" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Перейти на Play Маркет"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:onClick="onPlayMarketLink"
+        android:layout_gravity="center"
+        android:id="@+id/buttonGOTOPlaym"
+        android:background="@drawable/btn_transp_selector"/>
+
+</LinearLayout>
